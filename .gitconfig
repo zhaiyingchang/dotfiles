@@ -1,0 +1,15 @@
+[user]
+  name = zhai
+  email = 369722924@qq.com
+[alias]
+  update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
+  a = add
+  ci = commit -a -v
+  throw = reset --hard HEAD
+  throwh = reset --hard HEAD^
+[color]
+  ui = true
+[push]
+  default = current
+[core]
+  editor = /usr/bin/vim
